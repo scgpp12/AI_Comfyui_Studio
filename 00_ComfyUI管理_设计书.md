@@ -255,23 +255,22 @@ sons02 上收集器和原始数据放 `/mnt/storage/model-lab/castsery/comfy_man
 
 - 第 1 期上线：sons02 `/mnt/storage/model-lab/castsery/comfy_manage/`（`tools/collector.py`、`anomaly.py`、`gpu_sampler.py`、`cm_common.py`、`run_loop.sh`），本机副本 `模型学习\ComfyUI管理	ools\`。
 - 今天 8188 的 148 条已补进 `runs/runs.jsonl`；7 张异常单已自查、写结论（`anomalies/待查表.md`、`anomalies/调查/`）。
-- 常驻方式：**临时**用 `run_loop.sh` 后台进程（每 5 分钟收一次＋显存采样每 3 秒），没写 crontab、没建 systemd 服务，sons02 一重启就停。换成 crontab 要用户在聊天里点头（第九节第 2 项）。
+- 常驻方式：11-17 16:43 起改用用户 crontab（用户在聊天里回「我同意」），之前临时用 `run_loop.sh` 后台进程跑过约 15 分钟；见下面「常驻进程」。
 - 提交者：`comfy_safe.py` 已在 `/prompt` 的 extra_data 里写 submitter 和 script；旧任务记「未知」，另给「按前缀推断」。
 - 第 2、3 期也已做（11-17 晚）：14 张登记卡和总表（`workflows/`）、三张索引和模型清单（`index/`，262 个文件、841 GB、1 个断链；md5 由 `model_md5.py` 后台慢慢算）。
 - 规范已到 v1.3（`00_ComfyUI规范_v1.3.md`，条号 0–24、第 20 条已删、现行 24 条，带改动记录）：第 10 条帧数用户批改正、v1.3 按源码改成 124–362 帧；第 20 条用户定删除；v1.1、v1.2 留着对照。
-- GitHub：用户选了 `scgpp12/AI_Comfyui_Studio`（公开）。sons02 工作副本 `/mnt/storage/model-lab/AI_Comfyui_Studio`，`tools/sync_repo.py` 拷文件并脱敏，本地已提交 10ee871（43 个文件）。**还没推**：推到公开仓库要用户本人在聊天里点头。
+- GitHub：用户选了 `scgpp12/AI_Comfyui_Studio`（公开）。sons02 工作副本 `/mnt/storage/model-lab/AI_Comfyui_Studio`，`tools/sync_repo.py` 拷文件并脱敏，本地已提交 10ee871（43 个文件）。用户 11-17 在聊天里回「我同意」后推送，提交号见本节末尾。
 
 ### 常驻进程（现状和停法）
 
-现在是临时的（不写 crontab、不建服务，重启就停）：
-- 收集循环 `tools/run_loop2.sh`：每 5 分钟跑 `collector.py`（收集＋异常）和 `build_index.py`（登记卡、索引）。PID 在 `comfy_manage/run_loop.pid`。
-- 显存采样 `tools/gpu_sampler.py`：每 3 秒一行。PID 在 `comfy_manage/gpu_sampler.pid`。
-- 模型 md5 `tools/model_md5.py`：一次性后台任务，算完自己退出。PID 在 `comfy_manage/model_md5.pid`。
-- 停：`cd /mnt/storage/model-lab/castsery/comfy_manage && kill $(cat run_loop.pid) $(cat gpu_sampler.pid) $(cat model_md5.pid)`。
+**11-17 16:43 已换成用户 crontab**（用户在模型学习频道聊天里回「我同意」）。原有 10 行没动，只在末尾加了 1 行注释、2 行任务；装前的 crontab 备份在 `comfy_manage/logs/crontab_备份_装前_1117.txt`。16:45 第一次自动跑成功（`logs/cron.log`）。
 
-用户在聊天里点头后换成用户 crontab（不用 sudo，不动现有那几行），加这两行，然后按 PID 停掉 `run_loop2.sh`：
 ```
 */5 * * * * cd /mnt/storage/model-lab/castsery/comfy_manage/tools && flock -n /tmp/cm_collector.lock nice -n 19 ionice -c3 timeout 1500 sh -c 'python3 collector.py; python3 build_index.py' >> ../logs/cron.log 2>&1
 @reboot sleep 30 && cd /mnt/storage/model-lab/castsery/comfy_manage/tools && nohup nice -n 19 python3 gpu_sampler.py >> ../logs/gpu_sampler.log 2>&1 & echo $! > /mnt/storage/model-lab/castsery/comfy_manage/gpu_sampler.pid
 ```
-停用 crontab 那两行：`crontab -l | grep -v comfy_manage | crontab -`，再 `kill $(cat gpu_sampler.pid)`。
+
+- 临时循环 `run_loop2.sh`（pid 3844196）16:44 已按 PID 停掉。
+- 显存采样：现在跑着的是 16:28 手动起的那个（pid 3816867，写在 `gpu_sampler.pid`）；以后开机由 `@reboot` 那行拉起。
+- 模型 md5（`model_md5.py`，pid 在 `model_md5.pid`）：一次性后台任务，算完自己退出。
+- 停用：`crontab -l | grep -v comfy_manage | crontab -`，再 `kill $(cat /mnt/storage/model-lab/castsery/comfy_manage/gpu_sampler.pid)`。
