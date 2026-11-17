@@ -2,11 +2,11 @@
 
 状态：淘汰　　类别：出图　　（这两项和下面三项在 index/指纹名.json 里改）
 原件脚本：castsery/qwen_speed/speed_ab.py（E2）
-注释版画布：未填
+带说明画布：未填
 速查表条目：未填
 样板任务：a0176fcc-1ca0-4f3d-b969-b896cddd4a52（8188，2026-11-17 14:54:31）
 
-## 机器统计（2026-11-17 16:45 自动生成）
+## 机器统计（2026-11-17 18:15 自动生成）
 
 - 模型文件：qwen3vl_8b_bf16.safetensors、qwen_image_2.1_bf16.safetensors、qwen_image_2.1_vae_bf16.safetensors
 - 主模型：qwen_image_2.1_bf16.safetensors；块补丁：无；步数：25

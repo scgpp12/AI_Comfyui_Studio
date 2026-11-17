@@ -2,16 +2,16 @@
 
 状态：可用　　类别：出图　　（这两项和下面三项在 index/指纹名.json 里改）
 原件脚本：ai-drama-pipeline/tools/qi21.py（gen_t0a、gen_r4–r8、gen_emo 等）
-注释版画布：8188 AI_Weather/出图/T0A_Qwen三图定妆_注释版.json（人台＋服装＋脸那一类；同指纹也包括妆面三图等别的三图组合）
+带说明画布：8188 AI天气/出图/主播定妆三视图_Qwen_带说明.json（内部代号 T0A）（人台＋服装＋脸那一类；同指纹也包括妆面三图等别的三图组合）
 速查表条目：「定妆和场景」节 Qwen 2.1 固定参数（第 111 行）
-样板任务：3e65d491-6922-4367-86e8-390d0b9e0ff7（8188，2026-11-17 14:28:45）
+样板任务：d32a94e8-ac6d-4108-9207-d9a53d719032（8188，2026-11-17 18:07:31）
 
-## 机器统计（2026-11-17 16:45 自动生成）
+## 机器统计（2026-11-17 18:15 自动生成）
 
 - 模型文件：qwen3vl_8b_bf16.safetensors、qwen_image_2.1_bf16.safetensors、qwen_image_2.1_vae_bf16.safetensors
 - 主模型：qwen_image_2.1_bf16.safetensors；块补丁：无；步数：25
 - 关键参数：`{"CLIPLoader.device": "default", "QwenImage21Cache.device": "auto", "QwenImage21Cache.dtype": "default", "TextEncodeQwenImage21.resolution": 0, "KSampler.steps": 25, "KSampler.cfg": 1.0, "KSampler.sampler_name": "euler", "KSampler.scheduler": "simple", "KSampler.denoise": 1.0}`
-- 跑过 39 次（失败 0、质量闸不过 0），提交者：未知（按前缀推断：ai-drama-pipeline/tools/qi21.py（gen_t0a、gen_r4–r8、gen_emo、gen_v3、gen_hat、gen_studio 等共用，前缀分不出是哪个，审美频道））
+- 跑过 41 次（失败 0、质量闸不过 0），提交者：未知（按前缀推断：ai-drama-pipeline/tools/qi21.py（gen_t0a、gen_r4–r8、gen_emo、gen_v3、gen_hat、gen_studio 等共用，前缀分不出是哪个，审美频道））
 
 | 尺寸 | 次数 | 执行秒中位（最小–最大） | 每步秒中位 | 整卡显存峰值中位 MiB | 进程显存峰值中位 MiB |
 |---|---|---|---|---|---|
@@ -19,6 +19,7 @@
 | 1056x1408 | 12 | 22.9（14.9–47.2） | 0.5 | 没记 | 没记 |
 | 1024x1280 | 7 | 22.1（21.8–22.3） | 0.5 | 没记 | 没记 |
 | 1104x1216 | 4 | 15.6（12.9–28.5） | 0.5 | 没记 | 没记 |
+| 864x1536 | 2 | 16.1（11.0–21.1） | 0.4 | 44279.0 | 39346.0 |
 | 1536x864 | 1 | 21.3（21.3–21.3） | 0.5 | 没记 | 没记 |
 
 审查记录：无

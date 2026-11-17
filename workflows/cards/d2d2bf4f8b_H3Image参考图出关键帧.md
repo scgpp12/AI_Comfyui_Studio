@@ -2,11 +2,11 @@
 
 状态：可用　　类别：出图　　（这两项和下面三项在 index/指纹名.json 里改）
 原件脚本：castsery/h3i_kf/h3i_kf.py
-注释版画布：8188 AI_Weather/出图/H3Image_参考图出关键帧_注释版.json
+带说明画布：8188 AI天气/出图/参考图出关键帧_H3Image_带说明.json
 速查表条目：未登记（待补）
 样板任务：d6252d97-9d60-4b71-9df0-50cae11eb4dc（8188，2026-11-17 15:04:41）
 
-## 机器统计（2026-11-17 16:45 自动生成）
+## 机器统计（2026-11-17 18:15 自动生成）
 
 - 模型文件：minimax_h3_image_pruned_int8_convrot.safetensors、minimax_h3_image_vae_fp16.safetensors、qwen3vl_32b_minimax_h3_int8_convrot.safetensors
 - 主模型：minimax_h3_image_pruned_int8_convrot.safetensors；块补丁：无；步数：6

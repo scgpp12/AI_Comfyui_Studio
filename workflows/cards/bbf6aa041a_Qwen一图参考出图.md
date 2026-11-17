@@ -2,11 +2,11 @@
 
 状态：可用　　类别：出图　　（这两项和下面三项在 index/指纹名.json 里改）
 原件脚本：ai-drama-pipeline/tools/qi21.py（gen_hat 中帧、首帧编辑等）
-注释版画布：未填
+带说明画布：未填
 速查表条目：第 111 行
 样板任务：41bf78ca-0c76-4fa7-9a04-9bfc25e532ef（8188，2026-11-17 14:29:18）
 
-## 机器统计（2026-11-17 16:45 自动生成）
+## 机器统计（2026-11-17 18:15 自动生成）
 
 - 模型文件：qwen3vl_8b_bf16.safetensors、qwen_image_2.1_bf16.safetensors、qwen_image_2.1_vae_bf16.safetensors
 - 主模型：qwen_image_2.1_bf16.safetensors；块补丁：无；步数：25

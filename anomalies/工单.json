@@ -157,5 +157,41 @@
   "调查记录": "anomalies/调查/A261117-07_p0a每条重装模型.md",
   "关单": "",
   "最新说明": "同一批 4 条，每条都从盘上重装：Minimax-h3_Singularity_x_10Eros-Max_PRISM_int8.safetensors、minimax_h3_audio_vae_fp32.safetensors、minimax_h3_video_vae_fp16.safetensors、qwen3vl_32b_minimax_h3_int8_convrot.safetensors"
+ },
+ "R3|8188|c7a09880bb": {
+  "单号": "A261117-08",
+  "规则": "R3",
+  "实例": "8188",
+  "指纹": "c7a09880bb",
+  "尺寸键": "1376x768x124",
+  "文件名前缀": "h3cmp/G1_two_zh_s7_b57",
+  "首次发现": "2026-11-17 17:50",
+  "涉及": [
+   "e5d7b9d4-4fba-4b16-be2e-343a25909282"
+  ],
+  "状态": "待查",
+  "负责人": "模型学习频道",
+  "结论": "",
+  "调查记录": "",
+  "关单": "",
+  "最新说明": "状态 error；null"
+ },
+ "R3|8191|ce371d4395": {
+  "单号": "A261117-09",
+  "规则": "R3",
+  "实例": "8191",
+  "指纹": "ce371d4395",
+  "尺寸键": "-",
+  "文件名前缀": "qiqi_dance/qd_s0",
+  "首次发现": "2026-11-17 18:10",
+  "涉及": [
+   "3874b0f9-ebb8-4214-8b37-2ab314454716"
+  ],
+  "状态": "待查",
+  "负责人": "模型学习频道",
+  "结论": "",
+  "调查记录": "",
+  "关单": "",
+  "最新说明": "状态 error；{\"节点\": \"RemakeConditioning\", \"类型\": \"AssertionError\", \"消息\": \"the source has 293 frames, 294 needed\\n\"}"
  }
 }
