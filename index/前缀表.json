@@ -1,0 +1,10 @@
+{
+ "t0b/pose": "castsery/qiqi_anchor/t0b/gen_pose.py 或 castsery/qiqi_anchor/gen_pair.py（审美频道）",
+ "t0b/depth": "castsery/qiqi_anchor/t0b/gen_pose.py 或 gen_pair.py 的深度预处理（审美频道）",
+ "qi21/tmp": "ai-drama-pipeline/tools/qi21.py（gen_t0a、gen_r4–r8、gen_emo、gen_v3、gen_hat、gen_studio 等共用，前缀分不出是哪个，审美频道）",
+ "p0a/": "castsery/p0a/p0a_run.py（模型学习频道）",
+ "h3i_kf/": "castsery/h3i_kf/h3i_kf.py（模型学习频道）",
+ "qwen_speed/zd_": "castsery/qwen_speed/speed_ab.py 的 8188 改版（总督导）",
+ "qwen_speed/fix_": "castsery/qwen_speed/speed_fix.py（模型学习频道）",
+ "dir1115/": "castsery/../dir1115/wen1080.py（模型学习频道）"
+}
