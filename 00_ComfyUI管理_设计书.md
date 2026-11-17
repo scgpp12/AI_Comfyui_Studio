@@ -250,7 +250,7 @@ sons02 上收集器和原始数据放 `/mnt/storage/model-lab/castsery/comfy_man
 - 常驻方式：**临时**用 `run_loop.sh` 后台进程（每 5 分钟收一次＋显存采样每 3 秒），没写 crontab、没建 systemd 服务，sons02 一重启就停。换成 crontab 要用户在聊天里点头（第九节第 2 项）。
 - 提交者：`comfy_safe.py` 已在 `/prompt` 的 extra_data 里写 submitter 和 script；旧任务记「未知」，另给「按前缀推断」。
 - 第 2、3 期也已做（11-17 晚）：14 张登记卡和总表（`workflows/`）、三张索引和模型清单（`index/`，262 个文件、841 GB、1 个断链；md5 由 `model_md5.py` 后台慢慢算）。
-- 规范 v1.1 已写（`00_ComfyUI规范_v1.1.md`，24 条＋改动记录）；第 10 条帧数上限等用户在幕布定。
+- 规范已到 v1.2（`00_ComfyUI规范_v1.2.md`，条号 0–24、第 20 条已删、现行 24 条，带改动记录）：第 10 条帧数用户已批改正，第 20 条用户定删除；v1.1 留着对照。
 - GitHub：用户选了 `scgpp12/AI_Comfyui_Studio`（公开）。sons02 工作副本 `/mnt/storage/model-lab/AI_Comfyui_Studio`，`tools/sync_repo.py` 拷文件并脱敏，本地已提交 10ee871（43 个文件）。**还没推**：推到公开仓库要用户本人在聊天里点头。
 
 ### 常驻进程（现状和停法）
