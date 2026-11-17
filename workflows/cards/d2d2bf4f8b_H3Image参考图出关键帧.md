@@ -6,7 +6,7 @@
 速查表条目：未登记（待补）
 样板任务：d6252d97-9d60-4b71-9df0-50cae11eb4dc（8188，2026-11-17 15:04:41）
 
-## 机器统计（2026-11-17 16:30 自动生成）
+## 机器统计（2026-11-17 16:40 自动生成）
 
 - 模型文件：minimax_h3_image_pruned_int8_convrot.safetensors、minimax_h3_image_vae_fp16.safetensors、qwen3vl_32b_minimax_h3_int8_convrot.safetensors
 - 主模型：minimax_h3_image_pruned_int8_convrot.safetensors；块补丁：无；步数：6
@@ -16,6 +16,8 @@
 | 尺寸 | 次数 | 执行秒中位（最小–最大） | 每步秒中位 | 整卡显存峰值中位 MiB | 进程显存峰值中位 MiB |
 |---|---|---|---|---|---|
 | 2656x1504 | 7 | 34.9（33.6–40.7） | 4.8 | 没记 | 没记 |
+
+审查记录：无
 
 异常单：无
 

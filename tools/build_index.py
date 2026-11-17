@@ -94,6 +94,9 @@ def main():
             w = med([r.get("整卡显存峰值MiB") for r in g]); pp = med([r.get("进程显存峰值MiB") for r in g])
             L.append("| %s | %d | %s | %s | %s | %s |" % (sz, len(g), "%s（%s–%s）" % m if m else "—", s[0] if s else "—", w[0] if w else "没记", pp[0] if pp else "没记"))
         tk = [t for t in T.values() if t["指纹"] == fp]
+        rv = sorted(os.path.basename(f) for f in glob.glob(os.path.join(BASE_DIR, "reviews", "*.md"))
+                    if not os.path.basename(f).startswith("00_") and fp in open(f, encoding="utf-8").read())
+        L += ["", "审查记录：" + ("、".join("[%s](../../reviews/%s)" % (x, x) for x in rv) if rv else "无")]
         L += ["", "异常单：" + ("、".join("%s（%s，%s）" % (t["单号"], t["规则"], t["状态"]) for t in tk) if tk else "无"), "",
               "<!-- 人写开始 -->", human, "<!-- 人写结束 -->", ""]
         open(path, "w", encoding="utf-8").write("\n".join(L))

@@ -7,11 +7,11 @@ import os, re, shutil, sys, json, glob
 SRC = "/mnt/storage/model-lab/castsery/comfy_manage"
 REPO = "/mnt/storage/model-lab/AI_Comfyui_Studio"
 # (源相对路径或 glob, 仓库里的目标目录)
-ITEMS = [("00_ComfyUI管理_设计书.md", ""), ("00_ComfyUI规范_v1.1.md", ""), ("00_ComfyUI规范_v1.2.md", ""), ("README.md", ""),
+ITEMS = [("00_ComfyUI管理_设计书.md", ""), ("00_ComfyUI规范_v1.1.md", ""), ("00_ComfyUI规范_v1.2.md", ""), ("00_ComfyUI规范_v1.3.md", ""), ("README.md", ""),
          ("tools/*.py", "tools"), ("tools/*.sh", "tools"),
          ("workflows/总表.md", "workflows"), ("workflows/cards/*.md", "workflows/cards"),
          ("index/*.md", "index"), ("index/前缀表.json", "index"), ("index/指纹名.json", "index"), ("index/models.jsonl", "index"),
-         ("anomalies/待查表.md", "anomalies"), ("anomalies/工单.json", "anomalies"), ("anomalies/调查/*.md", "anomalies/调查"),
+         ("reviews/*.md", "reviews"), ("anomalies/待查表.md", "anomalies"), ("anomalies/工单.json", "anomalies"), ("anomalies/调查/*.md", "anomalies/调查"),
          ("runs/runs.jsonl", "runs"), ("试算_1117/trial.py", "试算_1117"), ("试算_1117/runs_trial.json", "试算_1117"), ("试算_1117/anomalies_trial.json", "试算_1117")]
 TEXT_EXT = (".md", ".py", ".sh", ".json", ".jsonl")
 REDACT = [(re.compile(r"\b10\.32\.\d{1,3}\.\d{1,3}\b"), "<内网地址>"),
