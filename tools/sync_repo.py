@@ -7,7 +7,7 @@ import os, re, shutil, sys, json, glob
 SRC = "/mnt/storage/model-lab/castsery/comfy_manage"
 REPO = "/mnt/storage/model-lab/AI_Comfyui_Studio"
 # (源相对路径或 glob, 仓库里的目标目录)
-ITEMS = [("00_ComfyUI管理_设计书.md", ""), ("00_ComfyUI规范_v1.1.md", ""), ("00_ComfyUI规范_v1.2.md", ""), ("00_ComfyUI规范_v1.3.md", ""), ("00_ComfyUI规范_v1.4.md", ""), ("README.md", ""),
+ITEMS = [("00_ComfyUI管理_设计书.md", ""), ("00_ComfyUI规范_v1.1.md", ""), ("00_ComfyUI规范_v1.2.md", ""), ("00_ComfyUI规范_v1.3.md", ""), ("00_ComfyUI规范_v1.4.md", ""), ("00_ComfyUI规范_v1.5.md", ""), ("README.md", ""),
          ("tools/*.py", "tools"), ("tools/*.sh", "tools"),
          ("workflows/总表.md", "workflows"), ("workflows/旧名→新名对照_1117.md", "workflows"), ("workflows/cards/*.md", "workflows/cards"),
          ("index/*.md", "index"), ("index/前缀表.json", "index"), ("index/指纹名.json", "index"), ("index/models.jsonl", "index"),

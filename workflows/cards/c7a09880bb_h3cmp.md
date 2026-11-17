@@ -6,7 +6,7 @@
 速查表条目：未填
 样板任务：e5d7b9d4-4fba-4b16-be2e-343a25909282（8188，2026-11-17 17:47:32）
 
-## 机器统计（2026-11-17 18:15 自动生成）
+## 机器统计（2026-11-17 22:18 自动生成）
 
 - 模型文件：Minimax-h3_Singularity_x_10Eros-Max_PRISM_int8.safetensors、minimax_h3_audio_vae_fp32.safetensors、minimax_h3_latent_upscaler_3d_conv_v1_fp16.safetensors、minimax_h3_video_vae_fp16.safetensors、qwen3vl_32b_minimax_h3_int8_convrot.safetensors
 - 主模型：Minimax-h3_Singularity_x_10Eros-Max_PRISM_int8.safetensors；块补丁：无；步数：8
@@ -19,7 +19,7 @@
 
 审查记录：无
 
-异常单：A261117-08（R3，待查）
+异常单：A261117-08（R3，已知原因）
 
 <!-- 人写开始 -->
 ## 人写
@@ -31,4 +31,6 @@
 用户评价（从幕布抄：分数、原话、日期）：
 
 测试总结（测过什么、结论、局限、和别的工作流比）：
+
+分辨率和帧数规则（H3 Ref2V，详见 index/视频模型_分辨率和帧数规则.md「H3 Ref2V」一节）：原生短边 768、面积约 768×1344（节点不强制）；24fps；17k+5，训练范围约 124–362 帧；OOM 帧数未测；脸要多大未测；交片 RIFE 插到 96 再按原片帧率取。
 <!-- 人写结束 -->

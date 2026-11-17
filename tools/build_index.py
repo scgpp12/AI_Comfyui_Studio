@@ -64,7 +64,7 @@ def main():
     # ---- 登记卡 ----
     for fp, rs in byfp.items():
         nm = names[fp]; path = os.path.join(CARDS, "%s_%s.md" % (fp, nm["短名"].replace("/", "_")))
-        human = "## 人写\n\n用途：\n\n质量结论（写出处）：\n\n用户评价（从幕布抄：分数、原话、日期）：\n\n测试总结（测过什么、结论、局限、和别的工作流比）：\n"
+        human = "## 人写\n\n用途：\n\n质量结论（写出处）：\n\n用户评价（从幕布抄：分数、原话、日期）：\n\n测试总结（测过什么、结论、局限、和别的工作流比）：\n\n分辨率和帧数规则（视频工作流照 index/视频模型_分辨率和帧数规则.md 对应模型一节写；出图写「不适用」）：\n"
         olds = glob.glob(os.path.join(CARDS, fp + "_*.md"))
         if olds:
             t = open(olds[0], encoding="utf-8").read()
