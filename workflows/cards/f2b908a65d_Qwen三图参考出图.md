@@ -6,7 +6,7 @@
 速查表条目：「定妆和场景」节 Qwen 2.1 固定参数（第 111 行）
 样板任务：d32a94e8-ac6d-4108-9207-d9a53d719032（8188，2026-11-17 18:07:31）
 
-## 机器统计（2026-11-17 22:18 自动生成）
+## 机器统计（2026-11-18 05:54 自动生成）
 
 - 模型文件：qwen3vl_8b_bf16.safetensors、qwen_image_2.1_bf16.safetensors、qwen_image_2.1_vae_bf16.safetensors
 - 主模型：qwen_image_2.1_bf16.safetensors；块补丁：无；步数：25

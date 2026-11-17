@@ -4,18 +4,18 @@
 原件脚本：castsery/qiqi_anchor/t0b/gen_pose.py
 带说明画布：8188 AI天气/出图/照深度图摆姿势_Qwen_带说明.json（内部代号 T0B）
 速查表条目：第 110 行；规范 v1 第 11 条
-样板任务：82472186-a208-407b-b38a-3b8b5e4804a4（8188，2026-11-17 14:44:50）
+样板任务：be3bc863-a849-4787-ac2e-36a99c3f6c05（8188，2026-11-17 22:51:31）
 
-## 机器统计（2026-11-17 22:18 自动生成）
+## 机器统计（2026-11-18 05:54 自动生成）
 
 - 模型文件：qwen3vl_8b_bf16.safetensors、qwen_image_2.1_bf16.safetensors、qwen_image_2.1_fun_controlnet_union_int8_convrot.safetensors、qwen_image_2.1_vae_bf16.safetensors
 - 主模型：qwen_image_2.1_bf16.safetensors；块补丁：有；步数：25
 - 关键参数：`{"CLIPLoader.device": "default", "QwenImage21Cache.device": "auto", "QwenImage21Cache.dtype": "default", "TextEncodeQwenImage21.resolution": 0, "KSampler.steps": 25, "KSampler.cfg": 1.0, "KSampler.sampler_name": "euler", "KSampler.scheduler": "simple", "KSampler.denoise": 1.0, "QwenImageDiffsynthControlnet.strength": 1.0}`
-- 跑过 22 次（失败 0、质量闸不过 0），提交者：未知（按前缀推断：castsery/qiqi_anchor/t0b/gen_pose.py 或 castsery/qiqi_anchor/gen_pair.py（审美频道））
+- 跑过 28 次（失败 0、质量闸不过 0），提交者：未知（按前缀推断：None）、未知（按前缀推断：castsery/qiqi_anchor/t0b/gen_pose.py 或 castsery/qiqi_anchor/gen_pair.py（审美频道））
 
 | 尺寸 | 次数 | 执行秒中位（最小–最大） | 每步秒中位 | 整卡显存峰值中位 MiB | 进程显存峰值中位 MiB |
 |---|---|---|---|---|---|
-| 1536x864 | 22 | 127.7（119.6–133.4） | 4.8 | 没记 | 没记 |
+| 1536x864 | 28 | 127.4（119.6–133.4） | 4.8 | 49471.0 | 44538.0 |
 
 审查记录：无
 
