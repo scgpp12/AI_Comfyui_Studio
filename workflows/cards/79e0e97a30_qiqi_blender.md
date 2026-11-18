@@ -6,7 +6,7 @@
 速查表条目：未填
 样板任务：094ca7ee-7a74-4205-bbb9-63e87d3b370a（8191，2026-11-17 23:12:23）
 
-## 机器统计（2026-11-18 12:15 自动生成）
+## 机器统计（2026-11-18 12:40 自动生成）
 
 - 模型文件：minimax_h3_audio_vae_fp32.safetensors、minimax_h3_video_vae_fp16.safetensors、qwen3vl_32b_minimax_h3_int8_convrot.safetensors、viggle_remake_swap_pruned_int8_convrot.safetensors
 - 主模型：viggle_remake_swap_pruned_int8_convrot.safetensors；块补丁：无；步数：6

@@ -6,7 +6,7 @@
 速查表条目：未登记（待补）
 样板任务：d6252d97-9d60-4b71-9df0-50cae11eb4dc（8188，2026-11-17 15:04:41）
 
-## 机器统计（2026-11-18 12:15 自动生成）
+## 机器统计（2026-11-18 12:40 自动生成）
 
 - 模型文件：minimax_h3_image_pruned_int8_convrot.safetensors、minimax_h3_image_vae_fp16.safetensors、qwen3vl_32b_minimax_h3_int8_convrot.safetensors
 - 主模型：minimax_h3_image_pruned_int8_convrot.safetensors；块补丁：无；步数：6

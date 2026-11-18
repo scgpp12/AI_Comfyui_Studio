@@ -6,7 +6,7 @@
 速查表条目：未填
 样板任务：a0176fcc-1ca0-4f3d-b969-b896cddd4a52（8188，2026-11-17 14:54:31）
 
-## 机器统计（2026-11-18 12:15 自动生成）
+## 机器统计（2026-11-18 12:40 自动生成）
 
 - 模型文件：qwen3vl_8b_bf16.safetensors、qwen_image_2.1_bf16.safetensors、qwen_image_2.1_vae_bf16.safetensors
 - 主模型：qwen_image_2.1_bf16.safetensors；块补丁：无；步数：25
