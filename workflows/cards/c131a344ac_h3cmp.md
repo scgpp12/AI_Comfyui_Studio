@@ -6,7 +6,7 @@
 速查表条目：未填
 样板任务：36bcc699-fce1-4f5d-81bd-f7d8b4dd1e02（8188，2026-11-17 22:23:44）
 
-## 机器统计（2026-11-18 05:54 自动生成）
+## 机器统计（2026-11-18 12:15 自动生成）
 
 - 模型文件：Minimax-h3_Singularity_x_10Eros-Max_PRISM_int8.safetensors、minimax_h3_audio_vae_fp32.safetensors、minimax_h3_latent_upscaler_3d_conv_v1_fp16.safetensors、minimax_h3_video_vae_fp16.safetensors、qwen3vl_32b_minimax_h3_int8_convrot.safetensors
 - 主模型：Minimax-h3_Singularity_x_10Eros-Max_PRISM_int8.safetensors；块补丁：无；步数：8

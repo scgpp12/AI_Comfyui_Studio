@@ -1,0 +1,36 @@
+# cam（指纹 3ffd7dd749）
+
+状态：待测　　类别：待定　　（这两项和下面三项在 index/指纹名.json 里改）
+原件脚本：未填
+带说明画布：未填
+速查表条目：未填
+样板任务：515de2a8-b30c-4211-b52f-50cdd875e74f（8188，2026-11-18 09:17:24）
+
+## 机器统计（2026-11-18 12:15 自动生成）
+
+- 模型文件：Minimax-h3_Singularity_x_10Eros-Max_PRISM_int8.safetensors、minimax_h3_audio_vae_fp32.safetensors、minimax_h3_latent_upscaler_3d_conv_v1_fp16.safetensors、minimax_h3_video_vae_fp16.safetensors、qwen3vl_32b_minimax_h3_int8_convrot.safetensors
+- 主模型：Minimax-h3_Singularity_x_10Eros-Max_PRISM_int8.safetensors；块补丁：无；步数：8
+- 关键参数：`{"MiniMaxH3ReferenceToVideo.ref_image_size": "match", "KSamplerSelect.sampler_name": "euler", "BasicScheduler.scheduler": "beta57", "BasicScheduler.steps": 8, "BasicScheduler.denoise": 1.0, "SelfLiftH3Sampler.cfg": 1.0, "SelfLiftH3Sampler.transition_step": 4, "SelfLiftH3Sampler.lowres_scale": 0.6}`
+- 跑过 14 次（失败 0、质量闸不过 0），提交者：模型学习
+
+| 尺寸 | 次数 | 执行秒中位（最小–最大） | 每步秒中位 | 整卡显存峰值中位 MiB | 进程显存峰值中位 MiB |
+|---|---|---|---|---|---|
+| 1376x768x124 | 14 | 106.2（104.0–120.2） | 17.1 | 69583.0 | 64598.0 |
+
+审查记录：无
+
+异常单：无
+
+<!-- 人写开始 -->
+## 人写
+
+用途：
+
+质量结论（写出处）：
+
+用户评价（从幕布抄：分数、原话、日期）：
+
+测试总结（测过什么、结论、局限、和别的工作流比）：
+
+分辨率和帧数规则（视频工作流照 index/视频模型_分辨率和帧数规则.md 对应模型一节写；出图写「不适用」）：
+<!-- 人写结束 -->

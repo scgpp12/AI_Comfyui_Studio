@@ -6,7 +6,7 @@
 速查表条目：规范 v1 第 11 条（非用深度控制不可时只喂 1 张参考图）
 样板任务：9c50c2d8-72ed-43e6-a69e-d6e3ec05facb（8188，2026-11-17 14:56:09）
 
-## 机器统计（2026-11-18 05:54 自动生成）
+## 机器统计（2026-11-18 12:15 自动生成）
 
 - 模型文件：qwen3vl_8b_bf16.safetensors、qwen_image_2.1_bf16.safetensors、qwen_image_2.1_fun_controlnet_union_int8_convrot.safetensors、qwen_image_2.1_vae_bf16.safetensors
 - 主模型：qwen_image_2.1_bf16.safetensors；块补丁：有；步数：25
