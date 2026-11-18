@@ -6,7 +6,7 @@
 速查表条目：未填
 样板任务：cb96abaf-4cf7-4031-86a3-2644913591cf（8191，2026-11-17 19:31:21）
 
-## 机器统计（2026-11-18 12:40 自动生成）
+## 机器统计（2026-11-18 12:55 自动生成）
 
 - 模型文件：face_yolov8m.pt、minimax_h3_audio_vae_fp32.safetensors、minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors、minimax_h3_fl2va_pruned_int8_convrot.safetensors、minimax_h3_video_vae_fp16.safetensors、qwen3vl_32b_minimax_h3_int8_convrot.safetensors
 - 主模型：minimax_h3_fl2va_pruned_int8_convrot.safetensors；块补丁：无；步数：8

@@ -6,7 +6,7 @@
 速查表条目：未填
 样板任务：388e7b5d-6d47-47c3-9fa6-e5af89eabf43（8188，2026-11-17 22:58:54）
 
-## 机器统计（2026-11-18 12:40 自动生成）
+## 机器统计（2026-11-18 12:55 自动生成）
 
 - 模型文件：minimax_h3_audio_vae_fp32.safetensors、minimax_h3_fl2v_lightx2v_turbo_4step_v0.1_comfy_resized_avg_rank_21_bf16.safetensors、minimax_h3_fl2va_int8_convrot.safetensors、minimax_h3_video_vae_fp16.safetensors、qwen3vl_32b_minimax_h3_int8_convrot.safetensors
 - 主模型：minimax_h3_fl2va_int8_convrot.safetensors；块补丁：无；步数：8

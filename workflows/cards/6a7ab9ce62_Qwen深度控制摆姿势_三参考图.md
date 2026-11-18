@@ -6,7 +6,7 @@
 速查表条目：第 110 行；规范 v1 第 11 条
 样板任务：3c925fed-e226-4bb9-9631-b12c90c465d4（8188，2026-11-18 08:14:15）
 
-## 机器统计（2026-11-18 12:40 自动生成）
+## 机器统计（2026-11-18 12:55 自动生成）
 
 - 模型文件：qwen3vl_8b_bf16.safetensors、qwen_image_2.1_bf16.safetensors、qwen_image_2.1_fun_controlnet_union_int8_convrot.safetensors、qwen_image_2.1_vae_bf16.safetensors
 - 主模型：qwen_image_2.1_bf16.safetensors；块补丁：有；步数：25

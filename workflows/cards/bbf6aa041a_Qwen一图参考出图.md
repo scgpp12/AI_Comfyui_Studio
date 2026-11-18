@@ -6,7 +6,7 @@
 速查表条目：第 111 行
 样板任务：bd11412e-8ab1-43e7-ad00-c50a2c3ab723（8188，2026-11-18 08:52:37）
 
-## 机器统计（2026-11-18 12:40 自动生成）
+## 机器统计（2026-11-18 12:55 自动生成）
 
 - 模型文件：qwen3vl_8b_bf16.safetensors、qwen_image_2.1_bf16.safetensors、qwen_image_2.1_vae_bf16.safetensors
 - 主模型：qwen_image_2.1_bf16.safetensors；块补丁：无；步数：25
